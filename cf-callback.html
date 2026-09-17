@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Nexa Clips — autorização</title><style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:680px;margin:48px auto;padding:0 20px;line-height:1.6;color:#1a1a1a;background:#fafafa}a{color:#0b57d0}nav a{margin-right:16px}footer{margin-top:48px;color:#666;font-size:.9rem}code{background:#eee;padding:2px 6px;border-radius:4px;word-break:break-all}.box{background:#fff;border:1px solid #ddd;border-radius:8px;padding:16px;margin-top:16px}button{font-size:1rem;padding:10px 16px;border-radius:6px;border:1px solid #0b57d0;background:#0b57d0;color:#fff;cursor:pointer}</style></head>
+<body>
+<h1>Autorização recebida</h1>
+<p>Copie a URL desta página e cole onde for solicitado.</p>
+<div class="box"><p><code id="u"></code></p>
+<button onclick="navigator.clipboard.writeText(location.href).then(()=>{this.textContent='Copiado!'})">Copiar URL</button></div>
+<p><a href="index.html">← Nexa Clips</a></p>
+<script>document.getElementById('u').textContent = location.href;</script>
+</body></html>
